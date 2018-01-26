@@ -7,5 +7,37 @@
 </ion-header>
 
 <ion-content padding>
+  <ion-searchbar (ionInput)="getArtists($event)"></ion-searchbar>
+  <ion-card *ngFor="let artist of spotifyService.artists" >
 
+    <img [src]="artist.images | nopicture"/>
+
+    <ion-card-content>
+      <ion-card-title color="light">
+        {{ artist.name }}
+      </ion-card-title>
+    </ion-card-content>
+
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="danger" icon-start>
+          <ion-icon name='star'></ion-icon>
+          Favorite
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear small color="danger" icon-start>
+          <ion-icon name='musical-notes'></ion-icon>
+          Listen
+        </button>
+      </ion-col>
+      <ion-col text-right>
+        <button ion-button clear small color="danger" icon-start>
+          <ion-icon name='share-alt'></ion-icon>
+          Share
+        </button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
 </ion-content>
