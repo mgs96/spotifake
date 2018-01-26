@@ -5,13 +5,34 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <ion-slides autoplay="3000" loop="true">
+    <ion-slide>
+      <img src="assets/imgs/ed-sheeran.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/imgs/metallica.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/imgs/heroes.jpg">
+    </ion-slide>
+  </ion-slides>
+  <ion-grid>
+    <ion-row text-center>
+      <ion-col col-4>
+        <img src="assets/imgs/album.png" alt="">
+        <hr>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </ion-col>
+      <ion-col col-4>
+        <img src="assets/imgs/artist.png" alt="">
+        <hr>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </ion-col>
+      <ion-col col-4>
+        <img src="assets/imgs/music.png" alt="">
+        <hr>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
