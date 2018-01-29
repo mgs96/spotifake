@@ -2,5 +2,7 @@
   "name": "spotifake",
   "app_id": "1d71477b",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }
